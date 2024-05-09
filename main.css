@@ -1,0 +1,27 @@
+.container{
+    width:300vw;
+    transition: transform 0.5s;
+}
+
+.inner{
+    width:100vw;
+    float: left;
+}
+
+.inner img{
+    width:100%
+}
+
+button.buttonY{
+    position: absolute;
+    width: 20%;
+    top:80vh;
+    left: 15vw;
+}
+
+button.buttonN{
+    position: absolute;
+    width: 20%;
+    top:80vh;
+    left: 65vw;
+}
