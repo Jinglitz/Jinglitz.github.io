@@ -11,13 +11,13 @@
         <div>
             <div class="container">
                 <div class="inner">
-                    <img src="images/1.jpg">
+                    <img src="images/test_02.jpg">
                     </div>
                 <div class="inner">
-                    <img src="images/2.jpg">
+                    <img src="images/test_01.png">
                     </div>
                 <div class="inner">
-                    <img src="images/3.jpg">
+                    <img src="images/test_03.jpg">
                     </div>
                 <button class="buttonY">좋아</button>
                 <button class="buttonN">싫어</button>
@@ -28,12 +28,12 @@
         <button class="button2">2</button>
 
         <script>
-            document.querySelector('.button1').addEventListener('click',function(){
+            document.querySelector('.buttonY').addEventListener('click',function(){
                 document.querySelector('.container').style.transform='translate(-100vw)';
             });
 
-            document.querySelector('.button2').addEventListener('click',function(){
-                document.querySelector('.container').style.transform='translate(-200vw)';
+            document.querySelector('.buttonN').addEventListener('click',function(){
+                document.querySelector('.container').style.transform='translate(+100vw)';
             });
         </script>
 
