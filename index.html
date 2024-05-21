@@ -9,18 +9,36 @@
 
         <!-- <div style="overflow: hidden"> -->
         <div>
-            <div class="container">
+            <div class="container" onclick="DivOnClick()">
                 <div class="inner">
                     <img src="images/test_02.jpg">
-                    </div>
+                </div>
                 <div class="inner">
                     <img src="images/test_01.png">
-                    </div>
+                </div>
                 <div class="inner">
                     <img src="images/test_03.jpg">
-                    </div>
-                <button class="buttonY">좋아</button>
-                <button class="buttonN">싫어</button>
+                </div>
+                <div class="inner">
+                    <img src="images/test_02.jpg">
+                </div>
+                <div class="inner">
+                    <img src="images/test_01.png">
+                </div>
+                <div class="inner">
+                    <img src="images/test_03.jpg">
+                </div>
+                <div class="inner">
+                    <img src="images/test_02.jpg">
+                </div>
+                <div class="inner">
+                    <img src="images/test_01.png">
+                </div>
+                <div class="inner">
+                    <img src="images/test_03.jpg">
+                </div>
+                <!-- <button class="buttonY">좋아</button>
+                <button class="buttonN">싫어</button> -->
             </div>
         </div>
 
@@ -28,13 +46,14 @@
         <button class="button2">2</button>
 
         <script>
-            document.querySelector('.buttonY').addEventListener('click',function(){
-                document.querySelector('.container').style.transform='translate(-100vw)';
-            });
-
-            document.querySelector('.buttonN').addEventListener('click',function(){
-                document.querySelector('.container').style.transform='translate(+100vw)';
-            });
+            var Count=0;
+            var CurrentCoordinate = 0;
+            
+            function DivOnClick(){
+                CurrentCoordinate--;
+                // document.querySelector('.container').style.transform="translate(-100vw)";
+                document.querySelector('.container').style.transform="translate(" + 100*CurrentCoordinate + "vw)";
+            }
         </script>
 
     </body>
