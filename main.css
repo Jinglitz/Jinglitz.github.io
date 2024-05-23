@@ -3,13 +3,27 @@
     transition: transform 0.5s;
 }
 
+.index_inner{
+    width:10vw;
+    float: left;
+    border:0.5vw solid #eaeaea;
+}
+
 .inner{
     width:100vw;
     float: left;
+    padding: 15px;
+    border-radius: 50%;
 }
 
 .inner img{
     width:100%
+}
+
+.inner p{
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
 }
 
 button.buttonY{
@@ -24,4 +38,24 @@ button.buttonN{
     width: 20%;
     top:80vh;
     left: 65vw;
+}
+
+/* 말풍선 참고 https://projects.verou.me/bubbly/ */
+.speech-bubble {
+	position: relative;
+	background: #6dd5df;
+	border-radius: .4em;
+}
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 24px solid transparent;
+	border-bottom-color: #6dd5df;
+	border-top: 0;
+	margin-left: -24px;
+	margin-top: -24px;
 }
