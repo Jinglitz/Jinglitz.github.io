@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>document</title>
+        <link href="main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body style="margin: 0">
+
+        <!-- <div style="overflow: hidden"> -->
+        <div>
+            <div class="container" onclick="DivOnClick()">
+                <div class="inner" data-aos="fade-up">
+                    <img src="images/test_01.png">
+                    <div class="speech-bubble" >
+                        <p>
+                        동해물과 백두산이 마르고 닳도록<br>
+                        하느님이 보우사하 우리나라만세~<br>
+                        무궁화 삼천리 화려강산~<br>
+                        대한사람 대한으로 길이 보전하셍~</p>
+                    </div>
+                </div>
+                <div class="inner" data-aos="fade-down">
+                    <img src="images/test_02.png">
+                    <div class="speech-bubble">
+                        <p>동해물과 백두산이 마르고 닳도록</p>
+                        <p>하느님이 보우사하 우리나라만세~</p>
+                        <p>무궁화 삼천리 화려강산~</p>
+                        <p>대한사람 대한으로 길이 보전하셍~</p>
+                    </div>
+                </div>
+                <div class="inner" data-aos="fade-right">
+                    <img src="images/test_03.png">
+                    <div class="speech-bubble">
+                        <p>동해물과 백두산이 마르고 닳도록</p>
+                        <p>하느님이 보우사하 우리나라만세~</p>
+                        <p>무궁화 삼천리 화려강산~</p>
+                        <p>대한사람 대한으로 길이 보전하셍~</p>
+                    </div>
+                </div>
+                <div class="inner" data-aos="fade-left">
+                    <img src="images/test_01.png">
+                    <div class="speech-bubble">
+                        <p>동해물과 백두산이 마르고 닳도록</p>
+                        <p>하느님이 보우사하 우리나라만세~</p>
+                        <p>무궁화 삼천리 화려강산~</p>
+                        <p>대한사람 대한으로 길이 보전하셍~</p>
+                    </div>
+                </div>
+                <div class="inner" data-aos="fade-up-right">
+                    <img src="images/test_02.png">
+                    <div class="speech-bubble">
+                        <p>동해물과 백두산이 마르고 닳도록</p>
+                        <p>하느님이 보우사하 우리나라만세~</p>
+                        <p>무궁화 삼천리 화려강산~</p>
+                        <p>대한사람 대한으로 길이 보전하셍~</p>
+                    </div>
+                </div>
+                <div class="inner" data-aos="fade-up-left">
+                    <img src="images/test_03.png">
+                    <div class="speech-bubble">
+                        <p>동해물과 백두산이 마르고 닳도록</p>
+                        <p>하느님이 보우사하 우리나라만세~</p>
+                        <p>무궁화 삼천리 화려강산~</p>
+                        <p>대한사람 대한으로 길이 보전하셍~</p>
+                    </div>
+                </div>
+                <!-- <button class="buttonY">좋아</button>
+                <button class="buttonN">싫어</button> -->
+            </div>
+        </div>
+
+        <button class="button1">1</button>
+        <button class="button2">2</button>
+
+        <script>
+            var Count=0;
+            var CurrentCoordinate = 0;
+            
+            function DivOnClick(){
+                CurrentCoordinate--;
+                // document.querySelector('.container').style.transform="translate(-100vw)";
+                document.querySelector('.container').style.transform="translate(" + 100*CurrentCoordinate + "vw)";
+            }
+        </script>
+
+    </body>
+</html>
