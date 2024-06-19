@@ -28,6 +28,7 @@
 
 .inner_h{
     width:100vw;
+    height: 100vh;
     float: left;
     padding: 15px;
     border-radius: 50%;
