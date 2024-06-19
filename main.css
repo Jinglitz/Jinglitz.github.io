@@ -3,12 +3,6 @@
     transition: transform 0.5s;
 }
 
-.index_inner{
-    width:10vw;
-    float: left;
-    border:0.5vw solid #eaeaea;
-}
-
 .inner{
     width:100vw;
     float: left;
@@ -21,6 +15,29 @@
 }
 
 .inner p{
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.container_h{
+    width:100vw;
+    height: 3000vh;
+    transition: transform 0.5s;
+}
+
+.inner_h{
+    width:100vw;
+    float: left;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.inner_h img{
+    width:100%
+}
+
+.inner_h p{
     text-align: center;
     font-size: 25px;
     padding: 15px;
